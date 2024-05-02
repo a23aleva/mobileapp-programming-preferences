@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-    private SharedPreferences myPreferenceRef;
+    private SharedPreferences preferenceRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        myPreferenceRef = getSharedPreferences("MyPreferenceName", MODE_PRIVATE);
+        preferenceRef = getSharedPreferences("Preferences", MODE_PRIVATE);
     }
 
     @Override
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         // Read a preference
         TextView prefTextRef=new TextView(this);
         prefTextRef=(TextView)findViewById(R.id.textViewer);
-        prefTextRef.setText(myPreferenceRef.getString("Preference1", "No preference found."));
+        prefTextRef.setText(preferenceRef.getString("Preference1", "No preference found."));
     }
 
 }
