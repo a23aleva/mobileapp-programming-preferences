@@ -17,6 +17,7 @@
         android:id="@+id/settingseditview"/>
 
     <TextView
+        android:text="Enter text"
         app:layout_constraintTop_toBottomOf="@id/settingseditview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
