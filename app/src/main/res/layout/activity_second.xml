@@ -16,4 +16,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/settingseditview"/>
 
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/settingseditview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prefText"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
